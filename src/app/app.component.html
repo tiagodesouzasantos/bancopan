@@ -1,0 +1,27 @@
+<section class="flex-column w-100 flex-wrap" id="home">
+  <div class="flex-column w-100 d-flex justify-content-center flex-wrap">
+    <header class="flex-row w-100 d-flex justify-content-center flex-wrap">
+      <div class="w-50 flex-row d-flex justify-content-end">
+        <div class="flex-row d-flex">
+          <a routerLink="/" class="small-link">
+            <button>
+              <fa-icon [icon]="['fab', 'github']"></fa-icon>
+            </button>
+          </a>
+        </div>
+        <div class="flex-row d-flex">
+          <span>GitHubPan</span>
+        </div>
+      </div>
+      <div class="w-50 flex-row d-flex justify-content-end">
+        <options></options>
+      </div>
+    </header>
+    <router-outlet class="flex-row w-100 d-flex justify-content-center"></router-outlet>
+    <footer class="flex-row w-100 d-flex justify-content-center flex-wrap">
+      <span class="copyrigth">
+        Copyright © 2019 GitHubPan. Todos os direitos reservados.
+      </span>
+    </footer>
+  </div>
+</section>
